@@ -1,0 +1,16 @@
+#PBS -S /bin/bash
+
+#PBS -V
+#PBS -q batch
+#PBS -N t4sm7
+#PBS -l walltime=00:30:00
+#PBS -l nodes=marte:ppn=6
+
+
+source /etc/profile.d/modules.sh
+module load openmpi
+
+cd $PBS_O_WORKDIR
+
+make mpi
+make test_mpi_sm_7 >> log4sm

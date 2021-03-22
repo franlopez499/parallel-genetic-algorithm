@@ -1,0 +1,6 @@
+mpirun -np 6 ./mpi ../input/pitufo.ppm ../output/t6/pitufoOut_bg_7.ppm 7000 512
+Leyendo fichero PPM ../input/pitufo.ppm
+Execution Time = 76.204959 seconds
+mpirun -np 6 ./mpi ../input/pitufo.ppm ../output/t6/pitufoOut_bg_20.ppm 20000 512
+Leyendo fichero PPM ../input/pitufo.ppm
+Execution Time = 214.818115 seconds
