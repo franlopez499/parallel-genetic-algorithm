@@ -1,0 +1,6 @@
+mpirun -np 12 -host marte,mercurio -npernode 6 ./mpi ../input/pitufo.ppm ../output/t12/pitufoOut_bg_7.ppm 7000 512
+Leyendo fichero PPM ../input/pitufo.ppm
+Execution Time = 149.574789 seconds
+mpirun -np 12 -host marte,mercurio -npernode 6 ./mpi ../input/pitufo.ppm ../output/t12/pitufoOut_bg_20.ppm 20000 512
+Leyendo fichero PPM ../input/pitufo.ppm
+Execution Time = 427.705712 seconds
