@@ -1,0 +1,100 @@
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm
+hola
+
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte -pernode ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte -pernode 4 ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte -pernode ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm
+hola
+
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm
+Pruebas secuencial
+Generaciones: 7000
+Poblacion: 256
+mpirun -np 4 -host marte ./sec ../input/pitufo.ppm ../output/pitufo-out_test_sec_small_256.ppm 7000 256
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+hola
+
+Leyendo fichero PPM ../input/pitufo.ppm

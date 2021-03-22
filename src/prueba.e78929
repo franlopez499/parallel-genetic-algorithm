@@ -1,0 +1,529 @@
+main.c: In function ‘main’:
+main.c:37:2: error: stray ‘\342’ in program
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+  ^
+main.c:37:2: error: stray ‘\210’ in program
+main.c:37:2: error: stray ‘\227’ in program
+main.c:37:2: error: stray ‘\342’ in program
+main.c:37:2: error: stray ‘\210’ in program
+main.c:37:2: error: stray ‘\227’ in program
+main.c:37:2: error: stray ‘\342’ in program
+main.c:37:2: error: stray ‘\210’ in program
+main.c:37:2: error: stray ‘\222’ in program
+main.c:37:69: error: expected ‘)’ before numeric constant
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                     ^
+main.c:37:69: error: stray ‘\342’ in program
+main.c:37:69: error: stray ‘\210’ in program
+main.c:37:69: error: stray ‘\227’ in program
+main.c:37:76: error: expected ‘)’ before ‘sizeof’
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                            ^
+main.c:78:4: error: stray ‘\342’ in program
+    MPI_Isend(&total, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+    ^
+main.c:78:4: error: stray ‘\210’ in program
+main.c:78:4: error: stray ‘\222’ in program
+main.c:78:91: error: expected ‘]’ before numeric constant
+    MPI_Isend(&total, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                           ^
+main.c:78:91: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:78:84: error: dereferencing pointer to incomplete type
+    MPI_Isend(&total, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                    ^
+main.c:78:91: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&total, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                           ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:78:91: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&total, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                           ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:79:4: error: stray ‘\342’ in program
+    MPI_Isend(&ancho, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:79:4: error: stray ‘\210’ in program
+main.c:79:4: error: stray ‘\222’ in program
+main.c:79:91: error: expected ‘]’ before numeric constant
+    MPI_Isend(&ancho, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                           ^
+main.c:79:91: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:79:84: error: dereferencing pointer to incomplete type
+    MPI_Isend(&ancho, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                    ^
+main.c:79:91: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&ancho, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                           ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:79:91: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&ancho, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                           ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:80:4: error: stray ‘\342’ in program
+    MPI_Isend(&alto, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:80:4: error: stray ‘\210’ in program
+main.c:80:4: error: stray ‘\222’ in program
+main.c:80:90: error: expected ‘]’ before numeric constant
+    MPI_Isend(&alto, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                          ^
+main.c:80:90: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:80:83: error: dereferencing pointer to incomplete type
+    MPI_Isend(&alto, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                   ^
+main.c:80:90: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&alto, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                          ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:80:90: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&alto, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                          ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:81:4: error: stray ‘\342’ in program
+    MPI_Isend(&max, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:81:4: error: stray ‘\210’ in program
+main.c:81:4: error: stray ‘\222’ in program
+main.c:81:89: error: expected ‘]’ before numeric constant
+    MPI_Isend(&max, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                         ^
+main.c:81:89: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:81:82: error: dereferencing pointer to incomplete type
+    MPI_Isend(&max, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                  ^
+main.c:81:89: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&max, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                         ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:81:89: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&max, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                         ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:82:4: error: stray ‘\342’ in program
+    MPI_Isend(&num_generaciones, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:82:4: error: stray ‘\210’ in program
+main.c:82:4: error: stray ‘\222’ in program
+main.c:82:102: error: expected ‘]’ before numeric constant
+    MPI_Isend(&num_generaciones, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                      ^
+main.c:82:102: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:82:95: error: dereferencing pointer to incomplete type
+    MPI_Isend(&num_generaciones, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                               ^
+main.c:82:102: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&num_generaciones, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                      ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:82:102: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&num_generaciones, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                      ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:83:4: error: stray ‘\342’ in program
+    MPI_Isend(&tam_poblacion, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:83:4: error: stray ‘\210’ in program
+main.c:83:4: error: stray ‘\222’ in program
+main.c:83:99: error: expected ‘]’ before numeric constant
+    MPI_Isend(&tam_poblacion, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                   ^
+main.c:83:99: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:83:92: error: dereferencing pointer to incomplete type
+    MPI_Isend(&tam_poblacion, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                            ^
+main.c:83:99: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(&tam_poblacion, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:83:99: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(&tam_poblacion, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:84:4: error: stray ‘\342’ in program
+    MPI_Isend(imagen_objetivo, total, rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+main.c:84:4: error: stray ‘\210’ in program
+main.c:84:4: error: stray ‘\222’ in program
+main.c:84:105: error: expected ‘]’ before numeric constant
+    MPI_Isend(imagen_objetivo, total, rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                         ^
+main.c:84:105: error: invalid use of undefined type ‘struct ompi_request_t’
+main.c:84:98: error: dereferencing pointer to incomplete type
+    MPI_Isend(imagen_objetivo, total, rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                  ^
+main.c:84:105: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(imagen_objetivo, total, rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                         ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:84:105: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(imagen_objetivo, total, rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                         ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+main.c:88:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&total, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:88:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&total, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:89:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&ancho, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:89:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&ancho, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:90:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&alto, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:90:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&alto, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:91:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:91:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:92:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&num_generaciones, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:92:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&num_generaciones, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:93:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(&tam_poblacion, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:93:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(&tam_poblacion, 1, MPI_INT, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:94:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(imagen_objetivo, total, rgb_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+main.c:94:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(imagen_objetivo, total, rgb_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from main.c:4:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+imagen.c: In function ‘suavizar’:
+imagen.c:93:2: error: stray ‘\342’ in program
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+  ^
+imagen.c:93:2: error: stray ‘\210’ in program
+imagen.c:93:2: error: stray ‘\227’ in program
+imagen.c:93:2: error: stray ‘\342’ in program
+imagen.c:93:2: error: stray ‘\210’ in program
+imagen.c:93:2: error: stray ‘\227’ in program
+imagen.c:93:2: error: stray ‘\342’ in program
+imagen.c:93:2: error: stray ‘\210’ in program
+imagen.c:93:2: error: stray ‘\222’ in program
+imagen.c:93:69: error: expected ‘)’ before numeric constant
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                     ^
+imagen.c:93:69: error: stray ‘\342’ in program
+imagen.c:93:69: error: stray ‘\210’ in program
+imagen.c:93:69: error: stray ‘\227’ in program
+imagen.c:93:76: error: expected ‘)’ before ‘sizeof’
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                            ^
+imagen.c:105:4: error: stray ‘\342’ in program
+    MPI_Isend(imagen, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+imagen.c:105:4: error: stray ‘\210’ in program
+imagen.c:105:4: error: stray ‘\222’ in program
+imagen.c:105:114: error: expected ‘]’ before numeric constant
+    MPI_Isend(imagen, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                                  ^
+imagen.c:105:114: error: invalid use of undefined type ‘struct ompi_request_t’
+imagen.c:105:107: error: dereferencing pointer to incomplete type
+    MPI_Isend(imagen, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                           ^
+imagen.c:105:114: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(imagen, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                                  ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+imagen.c:105:114: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(imagen, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                                  ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+imagen.c:107:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(imagenLocal, ancho*(alto/world_size), rgb_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+imagen.c:107:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(imagenLocal, ancho*(alto/world_size), rgb_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+imagen.c:141:4: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+    MPI_Irecv(imagenLocal, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+    ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+imagen.c:141:4: error: too many arguments to function ‘MPI_Irecv’
+    MPI_Irecv(imagenLocal, ancho*(alto/world_size), rgb_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+    ^
+In file included from imagen.c:5:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c: In function ‘crear_imagen’:
+ga.c:49:2: warning: implicit declaration of function ‘crear_tipo_datos2’ [-Wimplicit-function-declaration]
+  crear_tipo_datos2(ancho * alto, &rgb_type, &individuo_type);
+  ^
+ga.c:54:2: error: stray ‘\342’ in program
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+  ^
+ga.c:54:2: error: stray ‘\210’ in program
+ga.c:54:2: error: stray ‘\227’ in program
+ga.c:54:2: error: stray ‘\342’ in program
+ga.c:54:2: error: stray ‘\210’ in program
+ga.c:54:2: error: stray ‘\227’ in program
+ga.c:54:2: error: stray ‘\342’ in program
+ga.c:54:2: error: stray ‘\210’ in program
+ga.c:54:2: error: stray ‘\222’ in program
+ga.c:54:69: error: expected ‘)’ before numeric constant
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                     ^
+ga.c:54:69: error: stray ‘\342’ in program
+ga.c:54:69: error: stray ‘\210’ in program
+ga.c:54:69: error: stray ‘\227’ in program
+ga.c:54:76: error: expected ‘)’ before ‘sizeof’
+  MPI_Request ∗requests = (MPI_Request ∗) malloc((world_size − 1) ∗ sizeof(MPI_Request));
+                                                                            ^
+ga.c:86:4: error: stray ‘\342’ in program
+    MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+    ^
+ga.c:86:4: error: stray ‘\210’ in program
+ga.c:86:4: error: stray ‘\222’ in program
+ga.c:86:129: error: expected ‘]’ before numeric constant
+    MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                 ^
+ga.c:86:129: error: invalid use of undefined type ‘struct ompi_request_t’
+ga.c:86:122: error: dereferencing pointer to incomplete type
+    MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                          ^
+ga.c:86:129: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+    MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                 ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:86:129: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                 ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:90:3: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+   MPI_Irecv(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c:90:3: error: too many arguments to function ‘MPI_Irecv’
+   MPI_Irecv(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+   ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c:130:4: error: stray ‘\342’ in program
+    MPI_Isend(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+    ^
+ga.c:130:4: error: stray ‘\210’ in program
+ga.c:130:4: error: stray ‘\222’ in program
+ga.c:130:108: error: ‘i’ undeclared (first use in this function)
+    MPI_Isend(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                            ^
+ga.c:130:108: note: each undeclared identifier is reported only once for each function it appears in
+ga.c:130:114: error: expected ‘]’ before numeric constant
+    MPI_Isend(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                                  ^
+ga.c:130:114: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:130:114: error: too many arguments to function ‘MPI_Isend’
+    MPI_Isend(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);
+                                                                                                                  ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:136:6: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+      MPI_Irecv(poblacionLocal, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+      ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c:136:6: error: too many arguments to function ‘MPI_Irecv’
+      MPI_Irecv(poblacionLocal, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+      ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c:162:6: error: stray ‘\342’ in program
+      MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+      ^
+ga.c:162:6: error: stray ‘\210’ in program
+ga.c:162:6: error: stray ‘\222’ in program
+ga.c:162:131: error: expected ‘]’ before numeric constant
+      MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                   ^
+ga.c:162:131: error: invalid use of undefined type ‘struct ompi_request_t’
+ga.c:162:124: error: dereferencing pointer to incomplete type
+      MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                            ^
+ga.c:162:131: warning: passing argument 7 of ‘MPI_Isend’ from incompatible pointer type [enabled by default]
+      MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                   ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:162:131: error: too many arguments to function ‘MPI_Isend’
+      MPI_Isend(poblacion + chunkSize + i - 1, chunkSize, individuo_type, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &requests[i − 1]);  
+                                                                                                                                   ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1313:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Isend(void *buf, int count, MPI_Datatype datatype, int dest,
+                    ^
+ga.c:166:5: warning: passing argument 7 of ‘MPI_Irecv’ from incompatible pointer type [enabled by default]
+     MPI_Irecv(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+     ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: expected ‘struct ompi_request_t **’ but argument is of type ‘struct MPI_Status *’
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+ga.c:166:5: error: too many arguments to function ‘MPI_Irecv’
+     MPI_Irecv(poblacionLocal, chunkSize, individuo_type, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE, &req);
+     ^
+In file included from ga.c:6:0:
+/usr/local/openmpi/1.6.4/gcc/include/mpi.h:1309:20: note: declared here
+ OMPI_DECLSPEC  int MPI_Irecv(void *buf, int count, MPI_Datatype datatype, int source,
+                    ^
+make: *** [sec] Error 1
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./sec
+Node: marte
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+make: *** [test_sec_small_256] Error 131

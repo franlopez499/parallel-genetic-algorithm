@@ -1,0 +1,2 @@
+mpicc -O3 -std=c99 -g -Wall main.c imagen.c ga.c derivados_mpi.c -o sec -DTIME -DDEBUG -lm
+
